@@ -27,8 +27,9 @@ const SocialLink: FC<SocialLinkProps> = ({
       aria-label={ariaLabel}
       rel="noopener noreferrer nofollow"
     >
-      {!children && `@${username}`}
-      {children && children}
+      {/* {!children && `@${username}`}
+      {children && children} */}
+      test
     </a>
   );
 };
