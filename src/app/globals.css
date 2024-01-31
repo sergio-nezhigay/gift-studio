@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-montserrat text-black;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-caveat;
+}
+
+@layer utilities {
+  .section {
+    @apply pt-[40px] md:pt-[60px] lg:pt-[100px];
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
+}
+
+.social-link {
+  background: linear-gradient(
+    180deg,
+    theme("colors.socialGradientStart") 9.21%,
+    theme("colors.socialGradientEnd") 39.47%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: -webkit-text-fill-color 250ms ease-in-out;
+}
+
+.social-link:hover,
+.social-link:focus {
+  -webkit-text-fill-color: theme("colors.accent");
+}
+
+.services-slider {
+  @apply lg:!mb-6 h-[504px];
+}
+
+.services-slider:hover .services-card:not(:hover),
+.services-list:hover .services-card:not(:hover) {
+  @apply lg:!opacity-25;
+}
+.services-slider:focus-within .services-card:not(:focus),
+.services-list:focus-within .services-card:not(:focus) {
+  @apply lg:!opacity-25 lg:!pointer-events-none lg:!cursor-default;
+}
+
+.services-slider:hover .services-card:hover,
+.services-list:hover .services-card:hover,
+.services-slider:focus-within .services-card:focus,
+.services-list:focus-within .services-card:focus {
+  @apply lg:!opacity-100 lg:!pointer-events-auto !cursor-pointer;
+}
+
+.advantages-slider {
+  @apply !mb-6 h-[266px];
+}
+
+.feedback-slider {
+  @apply !mb-6 h-[531px];
+}
+
+.gallery-slider {
+  @apply !mb-6  w-full !h-[424px] md:!h-[460px] lg:!h-[636px];
+}
+
+.gallery-slider > ul {
+  @apply items-center;
+}
+
+.swiper-slide.gallery-slide {
+  @apply lg:h-[537px] lg:!flex-center lg:transition lg:!scale-x-100 lg:!scale-y-[0.925];
+}
+
+.swiper-slide.gallery-slide.swiper-slide-active {
+  @apply lg:!scale-[1.364] lg:!scale-y-[1.186];
+}
+.swiper-slide.gallery-slide.swiper-slide-active > img {
+  @apply lg:!h-full lg:!w-auto;
+}
+
+.feedback-slide {
+  @apply invisible;
+}
+
+.feedback-slide.swiper-slide-active {
+  @apply !overflow-visible visible;
+}
+
+.feedback-slide.swiper-slide-next {
+  @apply !overflow-visible lg:visible;
+}
+
+.feedback-slider {
+  @apply !overflow-visible;
+}
+
+#feedback .container {
+  @apply overflow-hidden;
+}

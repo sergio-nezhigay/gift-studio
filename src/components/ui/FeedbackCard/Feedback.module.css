@@ -1,0 +1,9 @@
+.bg {
+  background-position: center;
+  background-image: url("../../../../public/assets/bg/feedback/feebback-bg.svg");
+}
+
+.card {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden;
+}

@@ -1,0 +1,8 @@
+[
+  { "id": 1, "text": "Про нас", "textRef": "about" },
+  { "id": 2, "text": "Послуги", "textRef": "services" },
+  { "id": 3, "text": "Переваги", "textRef": "advantages" },
+  { "id": 4, "text": "Відгуки", "textRef": "feedback" },
+  { "id": 5, "text": "FAQ", "textRef": "faq" },
+  { "id": 6, "text": "Галерея", "textRef": "gallery" }
+]

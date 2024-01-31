@@ -1,0 +1,8 @@
+{
+  "id": "feedback",
+  "title": "Відгуки",
+  "button": {
+    "btnOpenName": "Читати повністю",
+    "btnCloseName": "Приховати"
+  }
+}

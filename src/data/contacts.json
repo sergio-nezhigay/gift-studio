@@ -1,0 +1,22 @@
+{
+  "phoneData": {
+    "phone": "+380981234567",
+    "ariaLabel": "+380981234567"
+  },
+  "emailData": {
+    "email": "support@gift.com.ua",
+    "ariaLabel": "support@gift.com.ua"
+  },
+  "socialLinks": [
+    {
+      "id": 0,
+      "link": "https://www.instagram.com/",
+      "ariaLabel": "Сторінка компанії на Instagram"
+    },
+    {
+      "id": 1,
+      "link": "https://uk-ua.facebook.com/",
+      "ariaLabel": "Сторінка компанії на Facebook"
+    }
+  ]
+}
